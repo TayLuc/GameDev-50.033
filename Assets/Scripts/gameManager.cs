@@ -59,7 +59,7 @@ public class gameManager : MonoBehaviour
                 theBS.hasStarted = true;
 
                 music.Play();
-                Invoke("StopAudio", 40f);
+                Invoke("StopAudio", 42f);
             }
         }
         else
