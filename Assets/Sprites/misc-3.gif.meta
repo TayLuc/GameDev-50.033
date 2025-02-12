@@ -37,18 +37,18 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: brick_block_1
+      name: brick_1
       rect:
         serializedVersion: 2
         x: 373
@@ -137,18 +137,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e47d177c03f73040a1b71e9b1ccad2f
-      internalID: 89309434
+      spriteID: 2858794a343969a4ab14f971195249ab
+      internalID: 1722679330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_brown_1
+      name: brick_2
       rect:
         serializedVersion: 2
-        x: 373
-        y: 1112
+        x: 393
+        y: 1188
         width: 16
         height: 16
       alignment: 0
@@ -158,302 +158,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7cbeff2d1c6a114b965d94d0351a931
-      internalID: -58050520
+      spriteID: 869fe0e64232b5447a813ed1a0eaa408
+      internalID: -646820459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: small_hill
+      name: brick_3
       rect:
         serializedVersion: 2
-        x: 47
-        y: 1057
-        width: 49
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5aaac8c0c8ca314eb61f239282d2ebd
-      internalID: 415056311
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: big_hill
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 1057
-        width: 80
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ab9a8939925e904e87e5fe02d7e7621
-      internalID: -1651729859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cloud_1
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 1030
-        width: 48
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 738e0861c2aebd843b1ce62fb1d79a1a
-      internalID: -778795405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cloud_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 1030
-        width: 64
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b8be8a9cf91c304ca42ae9db4fb1f23
-      internalID: 1701999887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cloud_3
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 1030
-        width: 33
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c50ebc5877f325846a28fdd61f4bbfcf
-      internalID: 619320980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shrub_1
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 983
-        width: 33
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c9964dbb0e22ab4796ccc93e9ea7a41
-      internalID: 1020086115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shrub_2
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 983
-        width: 64
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87ee7d2a3c8b3f24eb36e5476529341a
-      internalID: 1767659899
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shrub_3
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 983
-        width: 48
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d58883c567479cf4d8a31b0313b8116d
-      internalID: 1103223431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pipe_green_head
-      rect:
-        serializedVersion: 2
-        x: 614
-        y: 1174
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d677150751ffa9f4081a21bf540f0a49
-      internalID: -18711367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pipe_green_body
-      rect:
-        serializedVersion: 2
-        x: 616
-        y: 1154
-        width: 28
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57e1caf0a91c02a43bcac7a9815d46ed
-      internalID: 913934900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goomba_overworld_left
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 342
+        x: 413
+        y: 1189
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 580f280d7d06a754eb5a87adfb854d9d
-      internalID: -2081040353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goomba_overworld_right
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 342
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fd4f0f47a58ff846979e0adbe4245cc
-      internalID: 1751212118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goomba_overworld_stomped
-      rect:
-        serializedVersion: 2
-        x: 228
-        y: 343
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 849481dce55e0024e94d1a7990cfc35e
-      internalID: 557096297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mushroom_up
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 1193
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e32bd07ff6593c48b88b4c1310227d0
-      internalID: 4263416
+      spriteID: f62a0d953b839084c9d99424fc2c6551
+      internalID: 482760339
       vertices: []
       indices: 
       edges: []
@@ -463,60 +190,291 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 427
+        y: 1043
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677e5c410358f0f46a1e956018a9b5cf
+      internalID: -1269201391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1059
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acafccaba6f4ac41acd1ca2f933b518
+      internalID: -1899174967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_3
+      rect:
+        serializedVersion: 2
+        x: 451
         y: 1075
         width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e0a975af69eb3e4aa2cc6867e5d3343
-      internalID: 1222906527
+      spriteID: 106687afb79582b40a6a587c88aeaaa7
+      internalID: 1568537550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mystery_box_1
-      rect:
-        serializedVersion: 2
-        x: 372
-        y: 1076
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc98eda023c78964aa8158b6fa561e4f
-      internalID: 1323954756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mystery_box_used
+      name: pressed_1
       rect:
         serializedVersion: 2
         x: 373
         y: 1171
         width: 16
-        height: 15
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfac58b6063c94c45a118f517bf048b6
-      internalID: 1587839346
+      spriteID: a42ab324428adcb4d8c40c76fc0435fb
+      internalID: 727825032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pressed_2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5b033de2d94ac478c25a193b60f239
+      internalID: 756914090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pressed_3
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1171
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953a8169ac5081c4ebbbc4d8f5663406
+      internalID: -1490932410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mountain_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1057
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140e5585dde1b2c46a8af17bf838c68e
+      internalID: -1673997455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 983
+        width: 65
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4e64622c6d02c4088906b309c6743c
+      internalID: 604885197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mountain_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1057
+        width: 80
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f0642badcbecb4d89a01ce3efbb1c3
+      internalID: -237737617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1031
+        width: 49
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4008565b02814cd439283568ea52855b
+      internalID: -1728135035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1029
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3df0753ea711b4da7cb6f4c2826d4f
+      internalID: -1938261546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1133
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2d83b300bdfd440911c24213398db6
+      internalID: -38345739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d42342753a676d4cab6c915bf80e886
+      internalID: -423543911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1151
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f6b58a087934149ae903ddd0d2177b
+      internalID: 642643928
       vertices: []
       indices: 
       edges: []
@@ -532,25 +490,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      big_hill: -1651729859
-      brick_block_1: 89309434
-      cloud_1: -778795405
-      cloud_2: 1701999887
-      cloud_3: 619320980
-      coin_1: 1222906527
-      floor_brown_1: -58050520
-      goomba_overworld_left: -2081040353
-      goomba_overworld_right: 1751212118
-      goomba_overworld_stomped: 557096297
-      mushroom_up: 4263416
-      mystery_box_1: 1323954756
-      mystery_box_used: 1587839346
-      pipe_green_body: 913934900
-      pipe_green_head: -18711367
-      shrub_1: 1020086115
-      shrub_2: 1767659899
-      shrub_3: 1103223431
-      small_hill: 415056311
+      brick_1: 1722679330
+      brick_2: -646820459
+      brick_3: 482760339
+      bush_1: 604885197
+      cloud_1: -1728135035
+      cloud_2: -1938261546
+      coin_1: -1269201391
+      coin_2: -1899174967
+      coin_3: 1568537550
+      flower_1: 642643928
+      mountain_1: -1673997455
+      mountain_2: -237737617
+      mushroom_1: -423543911
+      pressed_1: 727825032
+      pressed_2: 756914090
+      pressed_3: -1490932410
+      star_1: -38345739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,17 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
-  - file
-  - Enemy
+  - Activator
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player Model
+  - 
   - Water
   - UI
-  - Ground
+  - 
   - 
   - 
   - 
@@ -44,15 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 278107641
+  - name: Coins
+    uniqueID: 3488192075
     locked: 0
-  - name: In-Game Blocks
-    uniqueID: 1252603651
-    locked: 0
-  - name: Player
-    uniqueID: 1425413217
-    locked: 0
-  - name: Ground
-    uniqueID: 946695659
+  - name: Effects
+    uniqueID: 4196731147
     locked: 0
