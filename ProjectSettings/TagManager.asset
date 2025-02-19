@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Activator
+  - Left_Hand
+  - Ammo_Box
+  - bullet
+  - hole
+  - MuzzleEffect
+  - floor
   layers:
   - Default
   - TransparentFX
@@ -42,9 +47,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Coins
-    uniqueID: 3488192075
+  - name: Background
+    uniqueID: 1243748397
     locked: 0
-  - name: Effects
-    uniqueID: 4196731147
+  - name: wheel
+    uniqueID: 3480144563
+    locked: 0
+  - name: Gun
+    uniqueID: 1368798649
+    locked: 0
+  - name: Bullet
+    uniqueID: 4146815803
+    locked: 0
+  - name: Hand
+    uniqueID: 1112127805
+    locked: 0
+  - name: Flare
+    uniqueID: 314610443
     locked: 0

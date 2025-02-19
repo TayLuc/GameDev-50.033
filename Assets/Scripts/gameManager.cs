@@ -1,168 +1,72 @@
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Events;
+using UnityEngine.UIElements;
+
 
 public class gameManager : MonoBehaviour
 {
-    public AudioSource music;
-    public bool startPlaying;
-    public BeatScroller theBS;
+    public UnityEvent gameStart;
+    public UnityEvent gameRestart;
+    public UnityEvent<int> scoreChange;
+    public UnityEvent gameOver;
+    public GameObject rightArm;
+    // public Vector3 rightArmSpawn;
 
-    public static gameManager instance;
 
-    public int currentScore;
-    public int scorePerNote = 100;
-    public int scorePerGoodNote = 125;
-    public int scorePerPerfectNote = 150;
-    public int currentMultiplier;
-    public int multiplierTracker; // when to increase to the next multiplier
-    public int[] multiplierThreshold;
-    // for the UI
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI multiplierText;
 
-    public float totalNotes;
-    public float normalHits;
-    public float goodHits;
-    public float perfectHits;
-    public float missedHits;
+    private int score = 0;
 
-    public AudioSource powerUpSoundSource, breakBlockSoundSource;
-    private AudioClip powerUpSoundClip, breakBlockSoundClip;
-
-    // For the end screen
-    public GameObject resultsScreen;
-    public Text percentHitText, normalHitsText, goodHitsText, perfectHitsText, missedHitsText, rankText, finalScoreText;
-    // Start is called before the first frame update
     void Start()
     {
-        // Make it so only have one instance of the game manager
-        instance = this;
-        scoreText.text = "Score: 0";
-        currentMultiplier = 1;
-        if (breakBlockSoundClip != null) breakBlockSoundSource.clip = breakBlockSoundClip;
-        if (powerUpSoundClip != null) powerUpSoundSource.clip = powerUpSoundClip;
-
-
-        totalNotes = FindObjectsOfType<coinObject>().Length;
-
+        gameStart.Invoke();
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!startPlaying)
-        {
-            if (Input.anyKeyDown)
-            {
-                startPlaying = true;
-                theBS.hasStarted = true;
 
-                music.Play();
-                Invoke("StopAudio", 42f);
-            }
-        }
-        else
-        {
-            if (!music.isPlaying && !resultsScreen.activeInHierarchy) // to trigger once only
-            {
-                resultsScreen.SetActive(true);
-                normalHitsText.text = normalHits.ToString();
-                goodHitsText.text = goodHits.ToString();
-                perfectHitsText.text = perfectHits.ToString();
-                missedHitsText.text = missedHits.ToString();
-
-                float totalHits = normalHits + goodHits + perfectHits;
-                float percentHits = totalHits / totalNotes * 100f;
-                percentHitText.text = percentHits.ToString("F2") + "%"; // show as a float to 2 dp (shortcut yay)
-
-                // Set the rank
-                string rankValue = "F";
-                if (percentHits > 40)
-                {
-                    rankValue = "D";
-                    if (percentHits > 55)
-                    {
-                        rankValue = "C";
-                        if (percentHits > 70)
-                        {
-                            rankValue = "B";
-                            if (percentHits > 85)
-                            {
-                                rankValue = "A";
-                                if (percentHits > 95)
-                                {
-                                    rankValue = "S";
-                                }
-                            }
-                        }
-                    }
-                }
-                rankText.text = rankValue;
-                finalScoreText.text = currentScore.ToString();
-
-            }
-        }
     }
 
-    void StopAudio()
+    public int getScore()
     {
-        music.Stop();
+        return score;
     }
 
-    public void normalHit()
+    public void GameRestart()
     {
-        currentScore += scorePerNote * currentMultiplier;
-        normalHits++;
-        noteHit();
+        ResetRightArm();
+        // reset score
+        score = 0;
+        SetScore(score);
+        gameRestart.Invoke();
+        Time.timeScale = 1.0f;
     }
 
-    public void goodHit()
+    public void IncreaseScore(int increment)
     {
-        currentScore += scorePerGoodNote * currentMultiplier;
-        goodHits++;
-        noteHit();
+        score += increment;
+        // Debug.Log("current score is" + score.ToString());
+        SetScore(score);
     }
-
-    public void perfectHit()
+    public void SetScore(int score)
     {
-        currentScore += scorePerPerfectNote * currentMultiplier;
-        perfectHits++;
-        noteHit();
+        scoreChange.Invoke(score);
     }
 
-    public void noteHit()
+    public void GameOver()
     {
-        // Debug.Log("Hit on time");
-
-        // keep the multiplier within the threshold
-        if (currentMultiplier - 1 < multiplierThreshold.Length)
-        {
-            multiplierTracker++;
-            if (multiplierThreshold[currentMultiplier - 1] <= multiplierTracker)
-            {
-                multiplierTracker = 0;
-                currentMultiplier++;
-                // play power up sound
-                powerUpSoundSource.Play();
-            }
-            multiplierText.text = "Multiplier: x" + currentMultiplier;
-            // currentScore += scorePerNote * currentMultiplier;
-            scoreText.text = "Score: " + currentScore;
-        }
+        Time.timeScale = 0.0f;
+        gameOver.Invoke();
     }
 
-    public void noteMiss()
+    public void ResetRightArm()
     {
-        Debug.Log("Missed Note");
-        // play the block break sound
-        breakBlockSoundSource.Play();
-        // reset the multiplier
-        currentMultiplier = 1;
-        multiplierTracker = 0;
-
-        missedHits++;
-        multiplierText.text = "Multiplier: x" + currentMultiplier;
-
+        // rightArm.transform.position = rightArmSpawn;
+        rightArm.GetComponent<Animator>().SetTrigger("ReturnToIdle");
     }
+
 }

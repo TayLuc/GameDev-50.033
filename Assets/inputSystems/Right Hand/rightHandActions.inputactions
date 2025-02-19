@@ -1,0 +1,130 @@
+{
+    "name": "rightHandActions",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "95c429b5-196e-46f5-bcbf-6c4a94b55a5d",
+            "actions": [
+                {
+                    "name": "GunOpen",
+                    "type": "Button",
+                    "id": "a20f03a5-3a91-4694-a506-6f53c4d15766",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ShootGun",
+                    "type": "Button",
+                    "id": "27fc731f-ac27-4283-b5a1-6de5586db226",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HandMove",
+                    "type": "Value",
+                    "id": "800f3031-c7ae-4d1e-ac99-5d30e4015f93",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "61de1212-53d1-4768-8794-7ef1a6e99dc9",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "GunOpen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2c3463f4-a2f3-4463-8404-8d5eacea4533",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "ShootGun",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "624e1089-61a6-4b65-883f-a4877214bc09",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HandMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "ff828d96-9d1d-48ed-8bb9-6b8b1eb1c4a9",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HandMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "5cf019de-8085-4674-b84f-7ca301ad9e11",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HandMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "837351bf-8f0c-4030-b6a1-d56bc912dc99",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HandMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "054c7929-5d06-45ea-8e57-cc3b0f867766",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HandMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
