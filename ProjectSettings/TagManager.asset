@@ -4,12 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Left_Hand
-  - Ammo_Box
-  - bullet
-  - hole
-  - MuzzleEffect
-  - floor
+  - SpawnPointPlayer
+  - PlayersShips
+  - EnemyShips
+  - PlayerBase
+  - EnemyBase
+  - PlayerEntities
+  - EnemyEntities
+  - EnemyBullet
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -17,9 +20,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Foreground
+  - Enemy
+  - Player
   - 
   - 
   - 
@@ -47,21 +50,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 1243748397
+  - name: Base
+    uniqueID: 4157455937
     locked: 0
-  - name: wheel
-    uniqueID: 3480144563
+  - name: Enemy
+    uniqueID: 144232007
     locked: 0
-  - name: Gun
-    uniqueID: 1368798649
+  - name: Player
+    uniqueID: 1429604927
     locked: 0
   - name: Bullet
-    uniqueID: 4146815803
-    locked: 0
-  - name: Hand
-    uniqueID: 1112127805
-    locked: 0
-  - name: Flare
-    uniqueID: 314610443
+    uniqueID: 1820910747
     locked: 0
