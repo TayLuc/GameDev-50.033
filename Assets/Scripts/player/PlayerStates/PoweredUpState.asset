@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7781699a155b36b47a0e058ff0127c8d, type: 3}
+  m_Name: PoweredUpState
+  m_EditorClassIdentifier: 
+  setupActions:
+  - {fileID: 11400000, guid: 60e1da3a486a1774fb3ce3aca69905e4, type: 2}
+  actions: []
+  eventTriggeredActions: []
+  exitActions:
+  - {fileID: 11400000, guid: 809cf805f91e579488e50e731201fdd2, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: 0df087122dc75bf4c9ccdca140a79d5c, type: 2}
+    trueState: {fileID: 11400000, guid: bff766a7052b05f41aedb41950072571, type: 2}
+    falseState: {fileID: 11400000, guid: fb5105d6e4aa7084a9928f41e6478e98, type: 2}
+  sceneGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

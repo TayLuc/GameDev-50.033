@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 0bf772a1282a1a34fb197f0008844c97
+  productGUID: 2a048b4ba0b28444c93b7ce9598527c5
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Battle ship
+  productName: BulletDance
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -631,14 +631,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Battle ship
+  metroPackageName: BulletDance
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Battle ship
+  metroApplicationDescription: BulletDance
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -705,12 +705,12 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 2
+  activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 58c931eb-79d8-4446-b760-6a46dbdce47f
+  cloudProjectId: 73306bcc-4356-494d-bee0-a850f2429cfa
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Battle ship
+  projectName: BulletDance
   organizationId: starsjetak
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

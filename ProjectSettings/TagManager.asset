@@ -4,15 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - SpawnPointPlayer
-  - PlayersShips
-  - EnemyShips
-  - PlayerBase
-  - EnemyBase
-  - PlayerEntities
-  - EnemyEntities
-  - EnemyBullet
-  - PlayerBullet
+  - blueBullet
+  - redBullet
+  - redGun
+  - blueGun
+  - redEnemy
+  - blueEnemy
+  - specialEnemy
+  - energy
   layers:
   - Default
   - TransparentFX
@@ -20,12 +19,12 @@ TagManager:
   - 
   - Water
   - UI
-  - Foreground
-  - Enemy
-  - Player
-  - 
-  - 
-  - 
+  - redEnemy
+  - blueEnemy
+  - redBullet
+  - blueBullet
+  - specialEnemy
+  - Effects
   - 
   - 
   - 
@@ -50,15 +49,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Base
-    uniqueID: 4157455937
-    locked: 0
-  - name: Enemy
-    uniqueID: 144232007
+  - name: Background
+    uniqueID: 1984894767
     locked: 0
   - name: Player
-    uniqueID: 1429604927
+    uniqueID: 3725754301
     locked: 0
-  - name: Bullet
-    uniqueID: 1820910747
+  - name: Hand
+    uniqueID: 1689984263
+    locked: 0
+  - name: Bullets
+    uniqueID: 66000093
+    locked: 0
+  - name: Enemies
+    uniqueID: 2305453305
+    locked: 0
+  - name: Effects
+    uniqueID: 3078158041
     locked: 0
